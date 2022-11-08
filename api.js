@@ -17,6 +17,7 @@ app.use(FileUpload());
 app.use(cors(corsOptions));
 
 app.use(require("./rutas/index.js"));
+app.use("/usr",require("./rutas/usuario"));
 app.use("/postulante", require("./rutas/postulante"));
 app.use("/convocatoria", require("./rutas/convocatoria"));
 
